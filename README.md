@@ -18,7 +18,7 @@
 &nbsp;Pronouns: **he/him**  
 &nbsp;Fun fact: **Top 6% globally on TryHackMe while still in my final year of BCA**
 
-### Tech Stack
+### Tech Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
