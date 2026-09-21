@@ -18,7 +18,7 @@
 
 <br/>
 
-## 🛡️ About
+##  About
 
 Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC Analyst (L1)** role, with a longer-term focus on **Cloud Security**. I learn by doing: TryHackMe rooms, home-lab networking, and building small tools modeled on real SOC workflows.
 
