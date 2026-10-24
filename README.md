@@ -40,13 +40,14 @@ Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC 
 
 | Project | What it is |
 | --- | --- |
-| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe writeups covering Linux, Windows, SOC and cybersecurity fundamentals. |
+| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Flagship, evidence-driven SOC lab (VirtualBox): Wazuh 4.14.8 manager, monitored Ubuntu endpoint with real-time FIM, and Kali Linux for controlled testing. Built around SIMULATE → DETECT → INVESTIGATE → RESPOND → MEASURE → IMPROVE → RETEST. v0.3 CASE-001 validated custom Rule 100002 (Level 8) on a controlled file modification; creation/deletion testing, incident response, metrics and purple-team work are planned. |
 | [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java + JDBC + MariaDB console app for tracking IT assets and security incidents, modeled on real SOC workflows. |
+| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe writeups covering Linux, Windows, SOC and cybersecurity fundamentals. |
 | [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure banking network in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. |
-| [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | Personal cybersecurity portfolio (TypeScript) showcasing security projects, SOC investigations and network labs. |
+| [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | Personal cybersecurity portfolio (TypeScript) showcasing security projects, SOC investigations and network labs. Live site: [andyy-s-site.vercel.app](https://andyy-s-site.vercel.app) |
 
 <div align="center">
 
-<sub> Mangaluru, India ·  Blue Team ·  65 days highest TryHackMe streak</sub>
+<sub> Mangaluru, India ·  Blue Team ·  78 days highest TryHackMe streak</sub>
 
 </div>
