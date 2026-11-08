@@ -66,7 +66,7 @@ Currently strengthening my skills in SIEM operations, log analysis and endpoint 
 
 <br/>
 
-<sub>Watching the logs so you don't have to.</sub>
+<sub>Zero false positives. Mostly.</sub>
 
 </div>
 
