@@ -95,18 +95,4 @@ Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC 
 
 <div align="center">
 
-<img src="./assets/.gitkeep/black-cat.gif" alt="Anime black cat sitting on a stone wall" width="480">
-
-<br/>
-
-<sub>Watching the logs so you don't have to.</sub>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<sub> Mangaluru, India ·  Blue Team ·  78 days highest TryHackMe streak</sub>
-
-</div>
+<i
