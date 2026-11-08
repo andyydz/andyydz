@@ -24,17 +24,61 @@ Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC 
 
 ##  Toolkit
 
+
+
 ![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
+
+
+
+
 ![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=flat-square)
+
+
+
+
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+
+
+
+
 ![Snort](https://img.shields.io/badge/Snort-EE3124?style=flat-square)
+
+
+
+
 ![Nmap](https://img.shields.io/badge/Nmap-0E83C8?style=flat-square)
+
+
+
+
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
+
+
+
+
 ![CyberChef](https://img.shields.io/badge/CyberChef-10B981?style=flat-square)
+
+
+
+
 ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
+
+
+
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+
+
+
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+
+
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+
 
 ##  Featured projects
 
@@ -46,6 +90,20 @@ Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC 
 | [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe writeups covering Linux, Windows, SOC and cybersecurity fundamentals. |
 | [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure banking network in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. |
 | [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | Personal cybersecurity portfolio (TypeScript) showcasing security projects, SOC investigations and network labs. Live site: [andyy-s-site.vercel.app](https://andyy-s-site.vercel.app) |
+
+<br/>
+
+<div align="center">
+
+<img src="./assets/.gitkeep/black-cat.gif" alt="Anime black cat sitting on a stone wall" width="480">
+
+<br/>
+
+<sub>Watching the logs so you don't have to.</sub>
+
+</div>
+
+<br/>
 
 <div align="center">
 
