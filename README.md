@@ -20,35 +20,80 @@
 
 ##  About
 
-Cybersecurity student (BCA, St. Aloysius University '27) working toward a **SOC Analyst (L1)** role, with a longer-term focus on **Cloud Security**. I learn by doing: TryHackMe rooms, home-lab networking, and building small tools modeled on real SOC workflows.
+Cybersecurity student focused on **Security Operations (SOC)**, threat detection, incident response and security automation. I build hands-on experience through SOC labs, Python-based security tools, network security projects and investigation write-ups.
+
+Currently strengthening my skills in SIEM operations, log analysis and endpoint security, with a longer-term focus on **Cloud Security**.
+
+**Open to SOC Analyst (L1) roles in Hyderabad and Bangalore** (also open to relocation within India).
+
+📄 [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) · ✉️ [andyydz57@gmail.com](mailto:andyydz57@gmail.com) · [LinkedIn](https://www.linkedin.com/in/andrew-vinston-d-souza-41699330a/)
 
 ##  Toolkit
 
+| Category | Tools |
+| --- | --- |
+| **Security** | 
 
+![Wazuh](https://img.shields.io/badge/Wazuh-3EA6E2?style=flat-square)
 
-![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
+ 
+
 ![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=flat-square)
+
+ 
+
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+
+ 
+
 ![Snort](https://img.shields.io/badge/Snort-EE3124?style=flat-square)
+
+ 
+
 ![Nmap](https://img.shields.io/badge/Nmap-0E83C8?style=flat-square)
+
+ 
+
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
+
+ 
+
 ![CyberChef](https://img.shields.io/badge/CyberChef-10B981?style=flat-square)
-![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
+
+ |
+| **Programming** | 
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+ 
+
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+ 
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
+ |
+| **Operating systems** | 
 
+![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
+
+ |
+| **Networking** | 
+
+![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
+
+ |
 
 ##  Featured projects
 
 | Project | What it is |
 | --- | --- |
-| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Flagship, evidence-driven SOC lab (VirtualBox): Wazuh 4.14.8 manager, monitored Ubuntu endpoint with real-time FIM, and Kali Linux for controlled testing. Built around SIMULATE → DETECT → INVESTIGATE → RESPOND → MEASURE → IMPROVE → RETEST. v0.3 SOC investigation phase and documentation milestone completed, with controlled lifecycle validation on one dedicated file: Rule 100003 (creation), Rule 100002 (modification) and Rule 100004 (deletion), each Level 8. CASE-001 remains open; broader regression testing, root-cause investigation and incident response are future work. |
-| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python-based SOC automation engine for processing exported Wazuh JSON alerts into validated, normalized, investigation-ready records. Features UTC timestamp normalization, optional SHA-256 integrity verification, local rule/severity enrichment, data-quality checks, dataset-driven MITRE ATT&CK lookup and a CLI interface, with automated pytest coverage. In development. |
-| [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java + JDBC + MariaDB console app for tracking IT assets and security incidents, modeled on real SOC workflows. |
-| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe writeups covering Linux, Windows, SOC and cybersecurity fundamentals. |
-| [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure banking network in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. |
+| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Home SOC lab for practicing the detect, investigate and respond cycle. Wazuh 4.14.8 manager, a monitored Ubuntu endpoint with real-time file integrity monitoring, and Kali Linux for controlled testing. Validated detection of file creation, modification and deletion (Rules 100003, 100002, 100004, each Level 8) and documented the investigation. **Skills:** SIEM alerts, FIM, investigation write-ups. CASE-001 is still open; regression testing and incident response are planned. |
+| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python tool that turns exported Wazuh JSON alerts into clean, investigation-ready records. Normalizes timestamps to UTC, optionally verifies SHA-256 integrity, enriches with local rule/severity data, runs data-quality checks and looks up MITRE ATT&CK mappings. CLI with pytest coverage. **Skills:** alert triage automation, Python, testing. In development. |
+| [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java console app (JDBC + MariaDB) for tracking IT assets and security incidents, modeled on SOC asset/incident workflows. **Skills:** Java, SQL databases, incident record keeping. |
+| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe write-ups on Linux, Windows, SOC and security fundamentals. **Skills:** hands-on practice and documenting findings clearly. |
+| [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure bank network built in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. **Skills:** network design and access control. |
 | [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | Personal cybersecurity portfolio (TypeScript) showcasing security projects, SOC investigations and network labs. Live site: [andyy-s-site.vercel.app](https://andyy-s-site.vercel.app) |
 
 <br/>
