@@ -26,64 +26,26 @@ Currently strengthening my skills in SIEM operations, log analysis and endpoint 
 
 **Open to SOC Analyst (L1) roles in Hyderabad and Bangalore** (also open to relocation within India).
 
-📄 [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) · ✉️ [andyydz57@gmail.com](mailto:andyydz57@gmail.com) · [LinkedIn](https://www.linkedin.com/in/andrew-vinston-d-souza-41699330a/)
+ [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) ·  [andyydz57@gmail.com](mailto:andyydz57@gmail.com) · [LinkedIn](https://www.linkedin.com/in/andrew-vinston-d-souza-41699330a/)
 
 ##  Toolkit
 
-| Category | Tools |
-| --- | --- |
-| **Security** | 
-
-![Wazuh](https://img.shields.io/badge/Wazuh-3EA6E2?style=flat-square)
-
- 
-
+**Security:** ![Wazuh](https://img.shields.io/badge/Wazuh-3EA6E2?style=flat-square)
 ![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=flat-square)
-
- 
-
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-
- 
-
 ![Snort](https://img.shields.io/badge/Snort-EE3124?style=flat-square)
-
- 
-
 ![Nmap](https://img.shields.io/badge/Nmap-0E83C8?style=flat-square)
-
- 
-
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
-
- 
-
 ![CyberChef](https://img.shields.io/badge/CyberChef-10B981?style=flat-square)
 
- |
-| **Programming** | 
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-
- 
-
+**Programming:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-
- 
-
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
- |
-| **Operating systems** | 
+**Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
 
-![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
+**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
 
- |
-| **Networking** | 
-
-![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
-
- |
 
 ##  Featured projects
 
