@@ -32,20 +32,26 @@ Currently strengthening my skills in SIEM operations, log analysis and endpoint 
 
 **Security:** ![Wazuh](https://img.shields.io/badge/Wazuh-3EA6E2?style=flat-square)
 ![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=flat-square)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![Snort](https://img.shields.io/badge/Snort-EE3124?style=flat-square)
 ![Nmap](https://img.shields.io/badge/Nmap-0E83C8?style=flat-square)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
 ![CyberChef](https://img.shields.io/badge/CyberChef-10B981?style=flat-square)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B7312C?style=flat-square)
+
+**Also familiar with:** ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-005571?style=flat-square&logo=elastic&logoColor=white)
+
+**Currently learning:** ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) · VPC · S3 · EC2
 
 **Programming:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) · JSON (Wazuh alert parsing)
 
 **Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
 
-**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
-
+**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white) · ping · traceroute · nslookup · VLANs · ACLs · DHCP · DNS
 
 ##  Featured projects
 
