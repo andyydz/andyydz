@@ -82,7 +82,7 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 
 <div align="center">
 
-<sub> Mangaluru, India ·  Blue Team ·  78 days highest TryHackMe streak</sub>
+<sub>
 
 </div>
 
