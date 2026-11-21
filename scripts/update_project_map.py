@@ -3,6 +3,7 @@ import json
 import math
 import random
 import os
+import hashlib
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -20,16 +21,6 @@ PALETTE = [
     "#C4936A",
     "#6E4E3D",
 ]
-FALLBACK_REPOSITORIES = [
-    "sentinel-soc-lab",
-    "python-soc-automation",
-    "Cybersecurity-Writeups",
-    "bank-secure-network",
-    "andyy-s-site",
-    "Cisco-Network-Defence",
-]
-
-
 def github_get(path):
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     headers = {
@@ -91,20 +82,6 @@ def discover_repositories():
                 "fork": forks,
             })
 
-    found_names = {repo["name"].lower() for repo in candidates}
-    if len(candidates) < 5:
-        for name in FALLBACK_REPOSITORIES:
-            if name.lower() not in found_names:
-                candidates.append({
-                    "name": name,
-                    "stars": 0,
-                    "language": "Multiple",
-                    "url": f"https://github.com/{OWNER}/{name}",
-                    "pushed_at": None,
-                    "fork": False,
-                })
-                found_names.add(name.lower())
-
     since = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=90)
     active = []
@@ -138,12 +115,12 @@ def discover_repositories():
         reverse=True,
     )
     if active:
-        return active[:10]
+        return active[:12]
 
     for repo in candidates:
         repo.setdefault("recent_commits", 0)
         repo.setdefault("latest_commit", None)
-    return candidates[:10]
+    return candidates[:12]
 
 
 def category_for(repo):
@@ -162,7 +139,7 @@ def category_for(repo):
     return "Other"
 
 
-def palette_for(category, index):
+def palette_for(category, index, repo_name=""):
     language_map = {
         "Python": "#0F2C3D",
         "Security / SOC": "#547A6E",
@@ -170,9 +147,11 @@ def palette_for(category, index):
         "Web": "#C4936A",
         "Java / SQL": "#6E4E3D",
         "Writeups": "#A6B7A1",
-        "Other": PALETTE[index % len(PALETTE)],
     }
-    return language_map.get(category, PALETTE[index % len(PALETTE)])
+    if category in language_map:
+        return language_map[category]
+    seed = f"{category}|{repo_name}|{index}".encode("utf-8")
+    return PALETTE[int(hashlib.sha256(seed).hexdigest(), 16) % len(PALETTE)]
 
 
 def text_for(fill):
@@ -180,14 +159,6 @@ def text_for(fill):
 
 
 def wrap_label(name):
-    explicit = {
-        "Cybersecurity-Writeups": ["Cybersecurity", "Writeups"],
-        "Cisco-Network-Defence": ["Cisco-Network", "Defence"],
-        "python-soc-automation": ["python-soc", "automation"],
-        "bank-secure-network": ["bank-secure", "network"],
-    }
-    if name in explicit:
-        return explicit[name]
     if len(name) <= 18:
         return [name]
     split = name.find("-", len(name) // 2)
@@ -314,7 +285,7 @@ def generate_svg(theme, repos):
     legend_items = []
     for index, repo in enumerate(repos):
         category = category_for(repo)
-        color = palette_for(category, index)
+        color = palette_for(category, index, repo["name"])
         if category not in [item[0] for item in legend_items]:
             legend_items.append((category, color))
 
@@ -410,7 +381,7 @@ def generate_svg(theme, repos):
         name = repo["name"]
         x, y = positions[index]
         category = category_for(repo)
-        fill = palette_for(category, index)
+        fill = palette_for(category, index, name)
         label_color = text_for(fill)
         radius = min(48, max(38, 38 + min(repo["recent_commits"], 20) * 0.35 + repo["stars"] * 0.8))
         durations = [7, 9, 11, 13, 15]
