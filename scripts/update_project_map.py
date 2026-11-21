@@ -253,11 +253,23 @@ def force_layout(repos):
         for i, (x, y) in enumerate(positions):
             x += forces[i][0]
             y += forces[i][1]
-            x = max(175, min(1005, x))
-            y = max(180, min(460, y))
+            x = max(190, min(990, x))
+            y = max(190, min(440, y))
             positions[i] = [x, y]
 
     # Final collision pass uses activity-sized radii and padded label boxes.
+    hub_x, hub_y = 590, 314
+    hub_clearance = 118
+    for i in range(count):
+        dx = positions[i][0] - hub_x
+        dy = positions[i][1] - hub_y
+        distance = max(math.sqrt(dx * dx + dy * dy), 1)
+        if distance < hub_clearance:
+            ux, uy = dx / distance, dy / distance
+            push = hub_clearance - distance
+            positions[i][0] += ux * push
+            positions[i][1] += uy * push
+
     for _ in range(12):
         for i in range(count):
             for j in range(i + 1, count):
@@ -267,7 +279,7 @@ def force_layout(repos):
                 distance = max(math.sqrt(dx * dx + dy * dy), 1)
                 ri = min(48, max(38, 38 + min(repos[i]["yearly_commits"], 20) * 0.35 + repos[i]["stars"] * 0.8))
                 rj = min(48, max(38, 38 + min(repos[j]["yearly_commits"], 20) * 0.35 + repos[j]["stars"] * 0.8))
-                minimum = ri + rj + 58
+                minimum = ri + rj + 82
                 if distance < minimum:
                     ux, uy = dx / distance, dy / distance
                     push = (minimum - distance) / 2
@@ -278,8 +290,8 @@ def force_layout(repos):
 
         for i, (x, y) in enumerate(positions):
             positions[i] = [
-                max(175, min(1005, x)),
-                max(180, min(460, y)),
+                max(190, min(990, x)),
+                max(190, min(440, y)),
             ]
 
     return [(round(x, 1), round(y, 1)) for x, y in positions]
@@ -363,13 +375,13 @@ def generate_svg(theme, repos):
         sx, sy = (hub_x, hub_y) if source == "andyydz" else repo_positions[source]
         tx, ty = (hub_x, hub_y) if target == "andyydz" else repo_positions[target]
         parts.append(
-            f'<line x1="{sx}" y1="{sy}" x2="{tx}" y2="{ty}" stroke="{line}" stroke-width="1.2" stroke-opacity="0.58">'
-            f'<animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="{(index % 7) * 0.28}s" repeatCount="indefinite"/>'
+            f'<line x1="{sx}" y1="{sy}" x2="{tx}" y2="{ty}" stroke="{line}" stroke-width="1.1" stroke-opacity="0.34">'
+            f'<animate attributeName="stroke-opacity" values="0.30;0.38;0.30" dur="7.2s" begin="{(index % 7) * 0.45}s" repeatCount="indefinite"/>'
             "</line>"
         )
         parts.append(
             f'<circle r="2.5" fill="{accent}" opacity="0.92">'
-            f'<animateMotion dur="{5.2 + (index % 3) * 0.7}s" repeatCount="indefinite" begin="{index * 0.28}s">'
+            f'<animateMotion dur="{8.4 + (index % 3) * 1.2}s" repeatCount="indefinite" begin="{index * 0.55}s">'
             f'<mpath href="#pulse-{index}"/></animateMotion>'
             "</circle>"
         )
@@ -384,8 +396,8 @@ def generate_svg(theme, repos):
     )
     parts.append(
         f'<circle cx="{hub_x}" cy="{hub_y}" r="46" fill="{surface}" fill-opacity="{0.28 if dark else 0.40}" stroke="{accent}" stroke-width="2" stroke-opacity="0.68">'
-        f'<animate attributeName="r" values="46;50;46" dur="3.6s" repeatCount="indefinite"/>'
-        f'<animate attributeName="stroke-opacity" values="0.68;1;0.68" dur="3.6s" repeatCount="indefinite"/>'
+        f'<animate attributeName="r" values="46;48;46" dur="12s" repeatCount="indefinite"/>'
+        f'<animate attributeName="stroke-opacity" values="0.68;0.82;0.68" dur="12s" repeatCount="indefinite"/>'
         "</circle>"
     )
     parts.append(
@@ -404,11 +416,11 @@ def generate_svg(theme, repos):
         fill = palette_for(category, index, name)
         label_color = text_for(fill)
         radius = min(48, max(38, 38 + min(repo["yearly_commits"], 20) * 0.35 + repo["stars"] * 0.8))
-        durations = [9, 11, 13, 15, 10]
+        durations = [10, 12, 14, 16, 11]
         duration = durations[index % len(durations)]
         phase = (index * 1.37) % duration
-        dx = 4 + (index % 4)
-        dy = 4 + ((index * 3) % 4)
+        dx = 4 + (index % 3)
+        dy = 4 + ((index * 2) % 3)
 
         parts.append(
             f'<g><animateTransform attributeName="transform" type="translate"'
