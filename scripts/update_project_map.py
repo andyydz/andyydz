@@ -187,6 +187,18 @@ def wrap_label(name):
     return [name[:18], name[18:]]
 
 
+def node_radius(repo, index):
+    """Deterministic 23-37px radius, weighted gently by activity/stars."""
+    activity = int(repo.get("yearly_commits") or 0)
+    stars = int(repo.get("stars") or 0)
+    seed = f"{repo['name']}|{activity}|{stars}|{index}".encode("utf-8")
+    digest = int(hashlib.sha256(seed).hexdigest()[:8], 16)
+    jitter = digest % 15
+    activity_weight = min(activity / 900.0, 1.0)
+    star_weight = min(stars / 20.0, 1.0)
+    return round(23 + jitter * 0.55 + activity_weight * 3.0 + star_weight * 2.0, 1)
+
+
 def force_layout(repos):
     """Seeded spring layout: hub attraction, domain edges, and strong pairwise repulsion."""
     count = len(repos)
@@ -277,9 +289,9 @@ def force_layout(repos):
                 xj, yj = positions[j]
                 dx, dy = xj - xi, yj - yi
                 distance = max(math.sqrt(dx * dx + dy * dy), 1)
-                ri = min(48, max(38, 38 + min(repos[i]["yearly_commits"], 20) * 0.35 + repos[i]["stars"] * 0.8))
-                rj = min(48, max(38, 38 + min(repos[j]["yearly_commits"], 20) * 0.35 + repos[j]["stars"] * 0.8))
-                minimum = ri + rj + 82
+                ri = node_radius(repos[i], i)
+                rj = node_radius(repos[j], j)
+                minimum = ri + rj + 56
                 if distance < minimum:
                     ux, uy = dx / distance, dy / distance
                     push = (minimum - distance) / 2
@@ -415,7 +427,7 @@ def generate_svg(theme, repos):
         category = category_for(repo)
         fill = palette_for(category, index, name)
         label_color = text_for(fill)
-        radius = min(48, max(38, 38 + min(repo["yearly_commits"], 20) * 0.35 + repo["stars"] * 0.8))
+        radius = node_radius(repo, index)
         durations = [10, 12, 14, 16, 11]
         duration = durations[index % len(durations)]
         phase = (index * 1.37) % duration
@@ -439,10 +451,12 @@ def generate_svg(theme, repos):
             f'<circle cx="{x}" cy="{y}" r="{radius}" fill="{fill}" fill-opacity="0.92"/>'
         )
         label_parts = wrap_label(name)
-        first_y = y - (6 if len(label_parts) > 1 else 1)
+        label_font = 8.5 if radius < 27 else 9.0
+        label_gap = 10 if radius < 27 else 11
+        first_y = y - (label_gap if len(label_parts) > 1 else 1)
         for part_index, label in enumerate(label_parts[:2]):
             parts.append(
-                f'<text x="{x}" y="{first_y + part_index * 12}" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="{label_color}">{escape(label)}</text>'
+                f'<text x="{x}" y="{first_y + part_index * label_gap}" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="{label_font}" font-weight="700" fill="{label_color}">{escape(label)}</text>'
             )
         parts.append(
             f'<text x="{x}" y="{y + radius + 15}" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="{muted}">★ {repo["stars"]} · {escape(repo["language"])}</text>'
