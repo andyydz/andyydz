@@ -12,111 +12,104 @@
 <text x="48" y="66" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="2" fill="#A6B7A1">PROJECT MAP</text>
 <text x="48" y="96" font-family="Menlo, Consolas, monospace" font-size="24" font-weight="700" fill="#F8FAFC">Everything I build, and how it connects</text>
 <text x="48" y="118" font-family="Menlo, Consolas, monospace" font-size="11" fill="#A8C6B5">Size reflects activity · Lines connect shared domains &amp; languages</text>
-<line x1="590" y1="314" x2="175" y2="192.8" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
+<line x1="590" y1="314" x2="326.2" y2="180" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="0.0s"><mpath href="#pulse-0"/></animateMotion></circle>
-<path id="pulse-0" d="M 590 314 L 175 192.8" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="185.9" y2="440.2" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.28s" repeatCount="indefinite"/></line>
+<path id="pulse-0" d="M 590 314 L 326.2 180" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="381.5" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.28s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="0.28s"><mpath href="#pulse-1"/></animateMotion></circle>
-<path id="pulse-1" d="M 590 314 L 185.9 440.2" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="417.7" y2="499.2" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.56s" repeatCount="indefinite"/></line>
+<path id="pulse-1" d="M 590 314 L 381.5 460" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="531.1" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.56s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="6.6s" repeatCount="indefinite" begin="0.56s"><mpath href="#pulse-2"/></animateMotion></circle>
-<path id="pulse-2" d="M 590 314 L 417.7 499.2" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="810.4" y2="389.1" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.8400000000000001s" repeatCount="indefinite"/></line>
+<path id="pulse-2" d="M 590 314 L 531.1 460" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="628.4" y2="232.5" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.8400000000000001s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="0.8400000000000001s"><mpath href="#pulse-3"/></animateMotion></circle>
-<path id="pulse-3" d="M 590 314 L 810.4 389.1" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="947.2" y2="288.4" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.12s" repeatCount="indefinite"/></line>
+<path id="pulse-3" d="M 590 314 L 628.4 232.5" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="871.1" y2="426.1" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.12s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="1.12s"><mpath href="#pulse-4"/></animateMotion></circle>
-<path id="pulse-4" d="M 590 314 L 947.2 288.4" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="791.7" y2="150" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.4000000000000001s" repeatCount="indefinite"/></line>
+<path id="pulse-4" d="M 590 314 L 871.1 426.1" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="825.0" y2="180" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.4000000000000001s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="6.6s" repeatCount="indefinite" begin="1.4000000000000001s"><mpath href="#pulse-5"/></animateMotion></circle>
-<path id="pulse-5" d="M 590 314 L 791.7 150" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="640.3" y2="500" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.6800000000000002s" repeatCount="indefinite"/></line>
+<path id="pulse-5" d="M 590 314 L 825.0 180" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="717.2" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.6800000000000002s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="1.6800000000000002s"><mpath href="#pulse-6"/></animateMotion></circle>
-<path id="pulse-6" d="M 590 314 L 640.3 500" fill="none" stroke="none"/>
-<line x1="590" y1="314" x2="545.3" y2="191.3" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
+<path id="pulse-6" d="M 590 314 L 717.2 460" fill="none" stroke="none"/>
+<line x1="590" y1="314" x2="226.7" y2="325.6" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="1.9600000000000002s"><mpath href="#pulse-7"/></animateMotion></circle>
-<path id="pulse-7" d="M 590 314 L 545.3 191.3" fill="none" stroke="none"/>
-<line x1="175" y1="192.8" x2="185.9" y2="440.2" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.28s" repeatCount="indefinite"/></line>
+<path id="pulse-7" d="M 590 314 L 226.7 325.6" fill="none" stroke="none"/>
+<line x1="326.2" y1="180" x2="628.4" y2="232.5" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.28s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="6.6s" repeatCount="indefinite" begin="2.24s"><mpath href="#pulse-8"/></animateMotion></circle>
-<path id="pulse-8" d="M 175 192.8 L 185.9 440.2" fill="none" stroke="none"/>
-<line x1="810.4" y1="389.1" x2="791.7" y2="150" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.56s" repeatCount="indefinite"/></line>
+<path id="pulse-8" d="M 326.2 180 L 628.4 232.5" fill="none" stroke="none"/>
+<line x1="381.5" y1="460" x2="871.1" y2="426.1" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.56s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="2.5200000000000005s"><mpath href="#pulse-9"/></animateMotion></circle>
-<path id="pulse-9" d="M 810.4 389.1 L 791.7 150" fill="none" stroke="none"/>
-<line x1="947.2" y1="288.4" x2="545.3" y2="191.3" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.8400000000000001s" repeatCount="indefinite"/></line>
+<path id="pulse-9" d="M 381.5 460 L 871.1 426.1" fill="none" stroke="none"/>
+<line x1="825.0" y1="180" x2="717.2" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.8400000000000001s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="2.8000000000000003s"><mpath href="#pulse-10"/></animateMotion></circle>
-<path id="pulse-10" d="M 947.2 288.4 L 545.3 191.3" fill="none" stroke="none"/>
-<line x1="185.9" y1="440.2" x2="417.7" y2="499.2" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.12s" repeatCount="indefinite"/></line>
+<path id="pulse-10" d="M 825.0 180 L 717.2 460" fill="none" stroke="none"/>
+<line x1="326.2" y1="180" x2="226.7" y2="325.6" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.12s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="6.6s" repeatCount="indefinite" begin="3.08s"><mpath href="#pulse-11"/></animateMotion></circle>
-<path id="pulse-11" d="M 185.9 440.2 L 417.7 499.2" fill="none" stroke="none"/>
-<line x1="417.7" y1="499.2" x2="640.3" y2="500" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.4000000000000001s" repeatCount="indefinite"/></line>
+<path id="pulse-11" d="M 326.2 180 L 226.7 325.6" fill="none" stroke="none"/>
+<line x1="381.5" y1="460" x2="531.1" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.4000000000000001s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="3.3600000000000003s"><mpath href="#pulse-12"/></animateMotion></circle>
-<path id="pulse-12" d="M 417.7 499.2 L 640.3 500" fill="none" stroke="none"/>
-<line x1="810.4" y1="389.1" x2="947.2" y2="288.4" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.6800000000000002s" repeatCount="indefinite"/></line>
+<path id="pulse-12" d="M 381.5 460 L 531.1 460" fill="none" stroke="none"/>
+<line x1="628.4" y1="232.5" x2="825.0" y2="180" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="1.6800000000000002s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="3.6400000000000006s"><mpath href="#pulse-13"/></animateMotion></circle>
-<path id="pulse-13" d="M 810.4 389.1 L 947.2 288.4" fill="none" stroke="none"/>
-<line x1="791.7" y1="150" x2="947.2" y2="288.4" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
+<path id="pulse-13" d="M 628.4 232.5 L 825.0 180" fill="none" stroke="none"/>
+<line x1="871.1" y1="426.1" x2="717.2" y2="460" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.0s" repeatCount="indefinite"/></line>
 <circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="6.6s" repeatCount="indefinite" begin="3.9200000000000004s"><mpath href="#pulse-14"/></animateMotion></circle>
-<path id="pulse-14" d="M 791.7 150 L 947.2 288.4" fill="none" stroke="none"/>
-<line x1="640.3" y1="500" x2="810.4" y2="389.1" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.28s" repeatCount="indefinite"/></line>
-<circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.2s" repeatCount="indefinite" begin="4.2s"><mpath href="#pulse-15"/></animateMotion></circle>
-<path id="pulse-15" d="M 640.3 500 L 810.4 389.1" fill="none" stroke="none"/>
-<line x1="545.3" y1="191.3" x2="791.7" y2="150" stroke="#547A6E" stroke-width="1.2" stroke-opacity="0.58"><animate attributeName="stroke-opacity" values="0.38;0.78;0.38" dur="4.8s" begin="0.56s" repeatCount="indefinite"/></line>
-<circle r="2.5" fill="#A6B7A1" opacity="0.92"><animateMotion dur="5.9s" repeatCount="indefinite" begin="4.48s"><mpath href="#pulse-16"/></animateMotion></circle>
-<path id="pulse-16" d="M 545.3 191.3 L 791.7 150" fill="none" stroke="none"/>
+<path id="pulse-14" d="M 871.1 426.1 L 717.2 460" fill="none" stroke="none"/>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 2 1; 0 2; -2 1; -1 -1; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="14s" repeatCount="indefinite"/>
 <circle cx="590" cy="314" r="46" fill="#28623A" fill-opacity="0.28" stroke="#A6B7A1" stroke-width="2" stroke-opacity="0.68"><animate attributeName="r" values="46;50;46" dur="3.6s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.68;1;0.68" dur="3.6s" repeatCount="indefinite"/></circle>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 2 1.5; 0 3; -2 -1; 0 0" keyTimes="0;0.25;0.5;0.75;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="12s" repeatCount="indefinite"/>
 <circle cx="590" cy="314" r="36" fill="#28623A" fill-opacity="0.92" stroke="#A6B7A1" stroke-width="1.2"/>
 <text x="590" y="313" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#F8FAFC">andyydz</text><text x="590" y="331" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">CENTRAL HUB</text></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 5 2; 5 -2; -2 -5; -5 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="7s" begin="-0.00s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/sentinel-soc-lab" target="_blank"><circle cx="175" cy="192.8" r="54.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.0s" begin="0.0s" repeatCount="indefinite"/></circle>
-<circle cx="175" cy="192.8" r="45.8" fill="#0F2C3D" fill-opacity="0.92"/>
-<text x="175" y="191.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">sentinel-soc-lab</text>
-<text x="175" y="253.60000000000002" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 6 3; 7 -3; -3 -7; -6 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="9s" begin="-1.37s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/python-soc-automation" target="_blank"><circle cx="185.9" cy="440.2" r="54.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.25s" begin="0.28s" repeatCount="indefinite"/></circle>
-<circle cx="185.9" cy="440.2" r="45.8" fill="#0F2C3D" fill-opacity="0.92"/>
-<text x="185.9" y="434.2" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">python-soc</text>
-<text x="185.9" y="446.2" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">automation</text>
-<text x="185.9" y="501.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 7 4; 9 -3; -3 -9; -7 4; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="11s" begin="-2.74s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/andyy-s-site" target="_blank"><circle cx="417.7" cy="499.2" r="54.8" fill="#C4936A" fill-opacity="0.28" stroke="#C4936A" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.5s" begin="0.56s" repeatCount="indefinite"/></circle>
-<circle cx="417.7" cy="499.2" r="45.8" fill="#C4936A" fill-opacity="0.92"/>
-<text x="417.7" y="498.2" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0F2027">andyy-s-site</text>
-<text x="417.7" y="560.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · TypeScript</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 6 -2; -2 -6; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="13s" begin="-4.11s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/bank-secure-network" target="_blank"><circle cx="810.4" cy="389.1" r="52.349999999999994" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.75s" begin="0.8400000000000001s" repeatCount="indefinite"/></circle>
-<circle cx="810.4" cy="389.1" r="43.349999999999994" fill="#2D4F56" fill-opacity="0.92"/>
-<text x="810.4" y="383.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">bank-secure</text>
-<text x="810.4" y="395.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">network</text>
-<text x="810.4" y="447.45000000000005" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Multiple</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 6 4; 8 -3; -3 -8; -6 4; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="15s" begin="-5.48s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/Cybersecurity-Writeups" target="_blank"><circle cx="947.2" cy="288.4" r="52.199999999999996" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.0s" begin="1.12s" repeatCount="indefinite"/></circle>
-<circle cx="947.2" cy="288.4" r="43.199999999999996" fill="#547A6E" fill-opacity="0.92"/>
-<text x="947.2" y="282.4" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Cybersecurity</text>
-<text x="947.2" y="294.4" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Writeups</text>
-<text x="947.2" y="346.59999999999997" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 3 · Multiple</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 7 2; 5 -3; -3 -5; -7 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="7s" begin="-6.85s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/Cisco-Network-Defence" target="_blank"><circle cx="791.7" cy="150" r="50.35" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.25s" begin="1.4000000000000001s" repeatCount="indefinite"/></circle>
-<circle cx="791.7" cy="150" r="41.35" fill="#2D4F56" fill-opacity="0.92"/>
-<text x="791.7" y="144" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Cisco-Network</text>
-<text x="791.7" y="156" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Defence</text>
-<text x="791.7" y="206.35" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 7 -2; -2 -7; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="9s" begin="-8.22s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/security-incident-asset-tracker" target="_blank"><circle cx="640.3" cy="500" r="49.199999999999996" fill="#6E4E3D" fill-opacity="0.28" stroke="#6E4E3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.5s" begin="1.6800000000000002s" repeatCount="indefinite"/></circle>
-<circle cx="640.3" cy="500" r="40.199999999999996" fill="#6E4E3D" fill-opacity="0.92"/>
-<text x="640.3" y="494" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">security-incident</text>
-<text x="640.3" y="506" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">asset-tracker</text>
-<text x="640.3" y="555.2" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Java</text></a></g>
-<g><animateTransform attributeName="transform" type="translate" values="0 0; 6 4; 9 -3; -3 -9; -6 4; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" dur="11s" begin="-9.59s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/SOC-Portfolio" target="_blank"><circle cx="545.3" cy="191.3" r="49.65" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.75s" begin="1.9600000000000002s" repeatCount="indefinite"/></circle>
-<circle cx="545.3" cy="191.3" r="40.65" fill="#547A6E" fill-opacity="0.92"/>
-<text x="545.3" y="190.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">SOC-Portfolio</text>
-<text x="545.3" y="246.95000000000002" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
-<rect x="48" y="517" width="480" height="36" rx="9" fill="#0F2027" fill-opacity="0.42" stroke="#28623A" stroke-opacity="0.58"/>
-<circle cx="60" cy="535" r="4" fill="#0F2C3D" fill-opacity="0.92"/><text x="70" y="539" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Python</text>
-<circle cx="142" cy="535" r="4" fill="#C4936A" fill-opacity="0.92"/><text x="152" y="539" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Web</text>
-<circle cx="224" cy="535" r="4" fill="#2D4F56" fill-opacity="0.92"/><text x="234" y="539" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Networking</text>
-<circle cx="306" cy="535" r="4" fill="#547A6E" fill-opacity="0.92"/><text x="316" y="539" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Security / SOC</text>
-<circle cx="388" cy="535" r="4" fill="#6E4E3D" fill-opacity="0.92"/><text x="398" y="539" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Java / SQL</text>
-<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">219 recent commits · latest 21 Nov 2026</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 4 2; 2 -4; -2 -2; -4 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="9s" begin="-0.00s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/Cybersecurity-Writeups" target="_blank"><circle cx="326.2" cy="180" r="56.4" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.0s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="326.2" cy="180" r="47.4" fill="#547A6E" fill-opacity="0.92"/>
+<text x="326.2" y="174" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Cybersecurity</text>
+<text x="326.2" y="186" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Writeups</text>
+<text x="326.2" y="242.4" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 3 · Multiple</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -7; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="11s" begin="-1.37s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/sentinel-soc-lab" target="_blank"><circle cx="381.5" cy="460" r="54.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.25s" begin="0.28s" repeatCount="indefinite"/></circle>
+<circle cx="381.5" cy="460" r="45.8" fill="#0F2C3D" fill-opacity="0.92"/>
+<text x="381.5" y="459" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">sentinel-soc-lab</text>
+<text x="381.5" y="520.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 6 3; 3 -6; -3 -3; -6 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="13s" begin="-2.74s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/andyy-s-site" target="_blank"><circle cx="531.1" cy="460" r="54.8" fill="#C4936A" fill-opacity="0.28" stroke="#C4936A" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.5s" begin="0.56s" repeatCount="indefinite"/></circle>
+<circle cx="531.1" cy="460" r="45.8" fill="#C4936A" fill-opacity="0.92"/>
+<text x="531.1" y="459" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0F2027">andyy-s-site</text>
+<text x="531.1" y="520.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · TypeScript</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 7 2; 3 -5; -3 -2; -7 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="15s" begin="-4.11s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/SOC-Portfolio" target="_blank"><circle cx="628.4" cy="232.5" r="55.6" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.75s" begin="0.8400000000000001s" repeatCount="indefinite"/></circle>
+<circle cx="628.4" cy="232.5" r="46.6" fill="#547A6E" fill-opacity="0.92"/>
+<text x="628.4" y="231.5" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">SOC-Portfolio</text>
+<text x="628.4" y="294.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 4 2; 2 -4; -2 -2; -4 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="10s" begin="-5.48s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/python-soc-automation" target="_blank"><circle cx="871.1" cy="426.1" r="54.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.0s" begin="1.12s" repeatCount="indefinite"/></circle>
+<circle cx="871.1" cy="426.1" r="45.8" fill="#0F2C3D" fill-opacity="0.92"/>
+<text x="871.1" y="420.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">python-soc</text>
+<text x="871.1" y="432.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">automation</text>
+<text x="871.1" y="486.90000000000003" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -7; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="9s" begin="-6.85s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/bank-secure-network" target="_blank"><circle cx="825.0" cy="180" r="54.8" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.25s" begin="1.4000000000000001s" repeatCount="indefinite"/></circle>
+<circle cx="825.0" cy="180" r="45.8" fill="#2D4F56" fill-opacity="0.92"/>
+<text x="825.0" y="174" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">bank-secure</text>
+<text x="825.0" y="186" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">network</text>
+<text x="825.0" y="240.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Multiple</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 6 3; 3 -6; -3 -3; -6 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="11s" begin="-8.22s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/Cisco-Network-Defence" target="_blank"><circle cx="717.2" cy="460" r="55.6" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.5s" begin="1.6800000000000002s" repeatCount="indefinite"/></circle>
+<circle cx="717.2" cy="460" r="46.6" fill="#2D4F56" fill-opacity="0.92"/>
+<text x="717.2" y="454" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Cisco-Network</text>
+<text x="717.2" y="466" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">Defence</text>
+<text x="717.2" y="521.6" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0; 7 2; 3 -5; -3 -2; -7 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="13s" begin="-9.59s" repeatCount="indefinite"/>
+<a href="https://github.com/andyydz/security-incident-asset-tracker" target="_blank"><circle cx="226.7" cy="325.6" r="54.8" fill="#6E4E3D" fill-opacity="0.28" stroke="#6E4E3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.75s" begin="1.9600000000000002s" repeatCount="indefinite"/></circle>
+<circle cx="226.7" cy="325.6" r="45.8" fill="#6E4E3D" fill-opacity="0.92"/>
+<text x="226.7" y="319.6" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">security-incident</text>
+<text x="226.7" y="331.6" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#F8FAFC">asset-tracker</text>
+<text x="226.7" y="386.40000000000003" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Java</text></a></g>
+<circle cx="60" cy="555" r="4" fill="#547A6E" fill-opacity="0.92"/><text x="70" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">SOC</text>
+<circle cx="132" cy="555" r="4" fill="#0F2C3D" fill-opacity="0.92"/><text x="142" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Python</text>
+<circle cx="204" cy="555" r="4" fill="#C4936A" fill-opacity="0.92"/><text x="214" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Web</text>
+<circle cx="276" cy="555" r="4" fill="#2D4F56" fill-opacity="0.92"/><text x="286" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Network</text>
+<circle cx="348" cy="555" r="4" fill="#6E4E3D" fill-opacity="0.92"/><text x="358" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Java</text>
+<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">1197 commits in 2026 · latest 21 Nov 2026</text>
 </g></svg>

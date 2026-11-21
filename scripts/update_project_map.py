@@ -82,15 +82,23 @@ def discover_repositories():
                 "fork": forks,
             })
 
-    since = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+    now = datetime.now(timezone.utc)
+    year_start = datetime(now.year, 1, 1, tzinfo=timezone.utc)
+    since = year_start.isoformat()
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=90)
     active = []
     for repo in candidates:
-        commits = github_get(
-            f"/repos/{OWNER}/{quote(repo['name'], safe='')}/commits"
-            f"?since={quote(since, safe='')}&per_page=100"
-        )
-        commits = commits if isinstance(commits, list) else []
+        commits = []
+        for page in range(1, 11):
+            page_commits = github_get(
+                f"/repos/{OWNER}/{quote(repo['name'], safe='')}/commits"
+                f"?since={quote(since, safe='')}&per_page=100&page={page}"
+            )
+            if not isinstance(page_commits, list) or not page_commits:
+                break
+            commits.extend(page_commits)
+            if len(page_commits) < 100:
+                break
         latest_commit = None
         if commits:
             latest_commit = commits[0].get("commit", {}).get("committer", {}).get("date")
@@ -100,7 +108,7 @@ def discover_repositories():
             continue
         if not is_recent and repo["stars"] == 0 and not commits:
             continue
-        repo["recent_commits"] = len(commits)
+        repo["yearly_commits"] = len(commits)
         repo["latest_commit"] = latest_commit
         repo["activity_score"] = len(commits) * 10 + repo["stars"] * 5
         active.append(repo)
@@ -118,7 +126,7 @@ def discover_repositories():
         return active[:12]
 
     for repo in candidates:
-        repo.setdefault("recent_commits", 0)
+        repo.setdefault("yearly_commits", 0)
         repo.setdefault("latest_commit", None)
     return candidates[:12]
 
@@ -156,6 +164,18 @@ def palette_for(category, index, repo_name=""):
 
 def text_for(fill):
     return "#0F2027" if fill in {"#A6B7A1", "#D4C8B5", "#C4936A"} else "#F8FAFC"
+
+
+def legend_label(category):
+    return {
+        "Python": "Python",
+        "Security / SOC": "SOC",
+        "Networking": "Network",
+        "Web": "Web",
+        "Java / SQL": "Java",
+        "Writeups": "Writeups",
+        "Other": "Other",
+    }.get(category, category[:10])
 
 
 def wrap_label(name):
@@ -234,7 +254,7 @@ def force_layout(repos):
             x += forces[i][0]
             y += forces[i][1]
             x = max(175, min(1005, x))
-            y = max(150, min(500, y))
+            y = max(180, min(460, y))
             positions[i] = [x, y]
 
     # Final collision pass uses activity-sized radii and padded label boxes.
@@ -245,8 +265,8 @@ def force_layout(repos):
                 xj, yj = positions[j]
                 dx, dy = xj - xi, yj - yi
                 distance = max(math.sqrt(dx * dx + dy * dy), 1)
-                ri = min(48, max(38, 38 + min(repos[i]["recent_commits"], 20) * 0.35 + repos[i]["stars"] * 0.8))
-                rj = min(48, max(38, 38 + min(repos[j]["recent_commits"], 20) * 0.35 + repos[j]["stars"] * 0.8))
+                ri = min(48, max(38, 38 + min(repos[i]["yearly_commits"], 20) * 0.35 + repos[i]["stars"] * 0.8))
+                rj = min(48, max(38, 38 + min(repos[j]["yearly_commits"], 20) * 0.35 + repos[j]["stars"] * 0.8))
                 minimum = ri + rj + 58
                 if distance < minimum:
                     ux, uy = dx / distance, dy / distance
@@ -259,7 +279,7 @@ def force_layout(repos):
         for i, (x, y) in enumerate(positions):
             positions[i] = [
                 max(175, min(1005, x)),
-                max(150, min(500, y)),
+                max(180, min(460, y)),
             ]
 
     return [(round(x, 1), round(y, 1)) for x, y in positions]
@@ -356,17 +376,17 @@ def generate_svg(theme, repos):
         parts.append(f'<path id="pulse-{index}" d="M {sx} {sy} L {tx} {ty}" fill="none" stroke="none"/>')
 
     parts.append(
+        f'<g><animateTransform attributeName="transform" type="translate"'
+        f' values="0 0; 2 1; 0 2; -2 1; -1 -1; 0 0"'
+        f' keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline"'
+        f' keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95"'
+        f' dur="14s" repeatCount="indefinite"/>'
+    )
+    parts.append(
         f'<circle cx="{hub_x}" cy="{hub_y}" r="46" fill="{surface}" fill-opacity="{0.28 if dark else 0.40}" stroke="{accent}" stroke-width="2" stroke-opacity="0.68">'
         f'<animate attributeName="r" values="46;50;46" dur="3.6s" repeatCount="indefinite"/>'
         f'<animate attributeName="stroke-opacity" values="0.68;1;0.68" dur="3.6s" repeatCount="indefinite"/>'
         "</circle>"
-    )
-    parts.append(
-        f'<g><animateTransform attributeName="transform" type="translate"'
-        f' values="0 0; 2 1.5; 0 3; -2 -1; 0 0"'
-        f' keyTimes="0;0.25;0.5;0.75;1" calcMode="spline"'
-        f' keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"'
-        f' dur="12s" repeatCount="indefinite"/>'
     )
     parts.append(
         f'<circle cx="{hub_x}" cy="{hub_y}" r="36" fill="{surface}" fill-opacity="0.92" stroke="{accent}" stroke-width="1.2"/>'
@@ -383,18 +403,18 @@ def generate_svg(theme, repos):
         category = category_for(repo)
         fill = palette_for(category, index, name)
         label_color = text_for(fill)
-        radius = min(48, max(38, 38 + min(repo["recent_commits"], 20) * 0.35 + repo["stars"] * 0.8))
-        durations = [7, 9, 11, 13, 15]
+        radius = min(48, max(38, 38 + min(repo["yearly_commits"], 20) * 0.35 + repo["stars"] * 0.8))
+        durations = [9, 11, 13, 15, 10]
         duration = durations[index % len(durations)]
         phase = (index * 1.37) % duration
-        dx = 5 + (index % 3)
-        dy = 5 + ((index * 2) % 5)
+        dx = 4 + (index % 4)
+        dy = 4 + ((index * 3) % 4)
 
         parts.append(
             f'<g><animateTransform attributeName="transform" type="translate"'
-            f' values="0 0; {dx} {dy // 2}; {dy} -{dx // 2}; -{dx // 2} -{dy}; -{dx} {dy // 2}; 0 0"'
+            f' values="0 0; {dx} {dy // 2}; {dx // 2} -{dy}; -{dx // 2} -{dy // 2}; -{dx} {dy // 2}; 0 0"'
             f' keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline"'
-            f' keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"'
+            f' keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95"'
             f' dur="{duration}s" begin="-{phase:.2f}s" repeatCount="indefinite"/>'
         )
         parts.append(
@@ -418,24 +438,22 @@ def generate_svg(theme, repos):
         )
 
     legend_x = 48
-    legend_y = 530
-    legend_width = min(520, 70 + len(legend_items) * 82)
-    parts.append(
-        f'<rect x="{legend_x}" y="{legend_y - 13}" width="{legend_width}" height="36" rx="9" fill="{panel}" fill-opacity="{0.42 if dark else 0.72}" stroke="{surface}" stroke-opacity="0.58"/>'
-    )
+    legend_y = 550
+    # Flat borderless legend: no card, so the graph remains the visual focus.
     lx = legend_x + 12
     for category, color in legend_items:
         parts.append(
             f'<circle cx="{lx}" cy="{legend_y + 5}" r="4" fill="{color}" fill-opacity="0.92"/>'
-            f'<text x="{lx + 10}" y="{legend_y + 9}" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="{ink}">{escape(category)}</text>'
+            f'<text x="{lx + 10}" y="{legend_y + 9}" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="{ink}">{escape(legend_label(category))}</text>'
         )
-        lx += 82
+        lx += 72
 
-    total_commits = sum(repo["recent_commits"] for repo in repos)
+    current_year = datetime.now(timezone.utc).year
+    total_commits = sum(repo["yearly_commits"] for repo in repos)
     latest_values = [repo["latest_commit"] for repo in repos if repo["latest_commit"]]
     latest_commit = max(latest_values, key=parse_timestamp) if latest_values else None
     parts.append(
-        f'<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="{muted}">{total_commits} recent commits · latest {escape(short_date(latest_commit))}</text>'
+        f'<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="{muted}">{total_commits} commits in {current_year} · latest {escape(short_date(latest_commit))}</text>'
     )
     parts.append("</g></svg>")
     return "\n".join(parts)
