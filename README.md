@@ -86,8 +86,17 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./project-map-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./project-map-light.svg">
-  <img alt="Andyydz project map — everything I build and how it connects" src="./project-map-dark.svg" width="100%">
-</picture>
+<table align="left" width="100%" role="presentation">
+  <tr>
+    <td width="180" valign="middle" align="center">
+      <img src="./assets/cat-companion.svg" alt="Small black cat wearing headphones with a music note and blue stars" width="180">
+    </td>
+    <td width="1000" valign="middle">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./project-map-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="./project-map-light.svg">
+        <img alt="Andyydz project map — everything I build and how it connects" src="./project-map-dark.svg" width="100%">
+      </picture>
+    </td>
+  </tr>
+</table>
