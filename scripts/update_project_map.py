@@ -166,6 +166,21 @@ def text_for(fill):
     return "#0F2027" if fill in {"#A6B7A1", "#D4C8B5", "#C4936A"} else "#F8FAFC"
 
 
+def gradient_id(fill):
+    return "node-" + fill.lstrip("#").lower()
+
+
+def rgb_shift(hex_color, amount):
+    red = int(hex_color[1:3], 16)
+    green = int(hex_color[3:5], 16)
+    blue = int(hex_color[5:7], 16)
+    return "#{:02X}{:02X}{:02X}".format(
+        max(0, min(255, red + amount)),
+        max(0, min(255, green + amount)),
+        blue if amount < 0 else min(255, blue + amount // 2),
+    )
+
+
 def legend_label(category):
     return {
         "Python": "Python",
@@ -371,6 +386,16 @@ def generate_svg(theme, repos):
         f'<stop stop-color="{background}"/>',
         f'<stop offset="1" stop-color="{surface}" stop-opacity="{0.76 if dark else 0.62}"/>',
         "</linearGradient>",
+        *[
+            (
+                f'<linearGradient id="{gradient_id(fill)}" x1="18%" y1="12%" x2="82%" y2="88%">'
+                f'<stop offset="0%" stop-color="{rgb_shift(fill, 18)}"/>'
+                f'<stop offset="52%" stop-color="{fill}"/>'
+                f'<stop offset="100%" stop-color="{rgb_shift(fill, -12)}"/>'
+                "</linearGradient>"
+            )
+            for fill in PALETTE
+        ],
         '<clipPath id="clip"><rect width="1180" height="610" rx="24"/></clipPath>',
         "</defs>",
         '<g clip-path="url(#clip)">',
@@ -448,7 +473,7 @@ def generate_svg(theme, repos):
             "</circle>"
         )
         parts.append(
-            f'<circle cx="{x}" cy="{y}" r="{radius}" fill="{fill}" fill-opacity="0.92"/>'
+            f'<circle cx="{x}" cy="{y}" r="{radius}" fill="url(#{gradient_id(fill)})" fill-opacity="0.92"/>'
         )
         label_parts = wrap_label(name)
         label_font = 8.5 if radius < 27 else 9.0
@@ -469,7 +494,7 @@ def generate_svg(theme, repos):
     lx = legend_x + 12
     for category, color in legend_items:
         parts.append(
-            f'<circle cx="{lx}" cy="{legend_y + 5}" r="4" fill="{color}" fill-opacity="0.92"/>'
+            f'<circle cx="{lx}" cy="{legend_y + 5}" r="4" fill="url(#{gradient_id(color)})" fill-opacity="0.92"/>'
             f'<text x="{lx + 10}" y="{legend_y + 9}" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="{ink}">{escape(legend_label(category))}</text>'
         )
         lx += 72

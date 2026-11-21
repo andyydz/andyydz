@@ -4,6 +4,13 @@
 <stop stop-color="#0F2027"/>
 <stop offset="1" stop-color="#28623A" stop-opacity="0.76"/>
 </linearGradient>
+<linearGradient id="node-0f2c3d" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#213E46"/><stop offset="52%" stop-color="#0F2C3D"/><stop offset="100%" stop-color="#03203D"/></linearGradient>
+<linearGradient id="node-2d4f56" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#3F615F"/><stop offset="52%" stop-color="#2D4F56"/><stop offset="100%" stop-color="#214356"/></linearGradient>
+<linearGradient id="node-547a6e" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#668C77"/><stop offset="52%" stop-color="#547A6E"/><stop offset="100%" stop-color="#486E6E"/></linearGradient>
+<linearGradient id="node-a6b7a1" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#B8C9AA"/><stop offset="52%" stop-color="#A6B7A1"/><stop offset="100%" stop-color="#9AABA1"/></linearGradient>
+<linearGradient id="node-d4c8b5" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#E6DABE"/><stop offset="52%" stop-color="#D4C8B5"/><stop offset="100%" stop-color="#C8BCB5"/></linearGradient>
+<linearGradient id="node-c4936a" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#D6A573"/><stop offset="52%" stop-color="#C4936A"/><stop offset="100%" stop-color="#B8876A"/></linearGradient>
+<linearGradient id="node-6e4e3d" x1="18%" y1="12%" x2="82%" y2="88%"><stop offset="0%" stop-color="#806046"/><stop offset="52%" stop-color="#6E4E3D"/><stop offset="100%" stop-color="#62423D"/></linearGradient>
 <clipPath id="clip"><rect width="1180" height="610" rx="24"/></clipPath>
 </defs>
 <g clip-path="url(#clip)">
@@ -63,53 +70,53 @@
 <text x="590" y="313" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#F8FAFC">andyydz</text><text x="590" y="331" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">CENTRAL HUB</text></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 4 2; 2 -4; -2 -2; -4 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="10s" begin="-0.00s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/Cybersecurity-Writeups" target="_blank"><circle cx="305.3" cy="190" r="41.4" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.0s" begin="0.0s" repeatCount="indefinite"/></circle>
-<circle cx="305.3" cy="190" r="32.4" fill="#547A6E" fill-opacity="0.92"/>
+<circle cx="305.3" cy="190" r="32.4" fill="url(#node-547a6e)" fill-opacity="0.92"/>
 <text x="305.3" y="179" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">Cybersecurity</text>
 <text x="305.3" y="190" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">Writeups</text>
 <text x="305.3" y="237.4" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 3 · Multiple</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -6; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="12s" begin="-1.37s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/sentinel-soc-lab" target="_blank"><circle cx="391.7" cy="440" r="39.3" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.25s" begin="0.28s" repeatCount="indefinite"/></circle>
-<circle cx="391.7" cy="440" r="30.3" fill="#0F2C3D" fill-opacity="0.92"/>
+<circle cx="391.7" cy="440" r="30.3" fill="url(#node-0f2c3d)" fill-opacity="0.92"/>
 <text x="391.7" y="439" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">sentinel-soc-lab</text>
 <text x="391.7" y="485.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 6 2; 3 -5; -3 -2; -6 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="14s" begin="-2.74s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/andyy-s-site" target="_blank"><circle cx="523.9" cy="440" r="34.5" fill="#C4936A" fill-opacity="0.28" stroke="#C4936A" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.5s" begin="0.56s" repeatCount="indefinite"/></circle>
-<circle cx="523.9" cy="440" r="25.5" fill="#C4936A" fill-opacity="0.92"/>
+<circle cx="523.9" cy="440" r="25.5" fill="url(#node-c4936a)" fill-opacity="0.92"/>
 <text x="523.9" y="439" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#0F2027">andyy-s-site</text>
 <text x="523.9" y="480.5" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · TypeScript</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 4 2; 2 -4; -2 -2; -4 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="16s" begin="-4.11s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/SOC-Portfolio" target="_blank"><circle cx="637.1" cy="205.8" r="38.5" fill="#547A6E" fill-opacity="0.28" stroke="#547A6E" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.75s" begin="0.8400000000000001s" repeatCount="indefinite"/></circle>
-<circle cx="637.1" cy="205.8" r="29.5" fill="#547A6E" fill-opacity="0.92"/>
+<circle cx="637.1" cy="205.8" r="29.5" fill="url(#node-547a6e)" fill-opacity="0.92"/>
 <text x="637.1" y="204.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">SOC-Portfolio</text>
 <text x="637.1" y="250.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -6; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="11s" begin="-5.48s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/python-soc-automation" target="_blank"><circle cx="872.0" cy="431.3" r="32.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.0s" begin="1.12s" repeatCount="indefinite"/></circle>
-<circle cx="872.0" cy="431.3" r="23.8" fill="#0F2C3D" fill-opacity="0.92"/>
+<circle cx="872.0" cy="431.3" r="23.8" fill="url(#node-0f2c3d)" fill-opacity="0.92"/>
 <text x="872.0" y="421.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">python-soc</text>
 <text x="872.0" y="431.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">automation</text>
 <text x="872.0" y="470.1" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 6 2; 3 -5; -3 -2; -6 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="10s" begin="-6.85s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/bank-secure-network" target="_blank"><circle cx="836.9" cy="190" r="35.5" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.25s" begin="1.4000000000000001s" repeatCount="indefinite"/></circle>
-<circle cx="836.9" cy="190" r="26.5" fill="#2D4F56" fill-opacity="0.92"/>
+<circle cx="836.9" cy="190" r="26.5" fill="url(#node-2d4f56)" fill-opacity="0.92"/>
 <text x="836.9" y="180" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">bank-secure</text>
 <text x="836.9" y="190" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">network</text>
 <text x="836.9" y="231.5" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Multiple</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 4 2; 2 -4; -2 -2; -4 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="12s" begin="-8.22s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/Cisco-Network-Defence" target="_blank"><circle cx="711.8" cy="440" r="35.0" fill="#2D4F56" fill-opacity="0.28" stroke="#2D4F56" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.5s" begin="1.6800000000000002s" repeatCount="indefinite"/></circle>
-<circle cx="711.8" cy="440" r="26.0" fill="#2D4F56" fill-opacity="0.92"/>
+<circle cx="711.8" cy="440" r="26.0" fill="url(#node-2d4f56)" fill-opacity="0.92"/>
 <text x="711.8" y="430" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">Cisco-Network</text>
 <text x="711.8" y="440" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">Defence</text>
 <text x="711.8" y="481.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 2 · Multiple</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -6; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="14s" begin="-9.59s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/security-incident-asset-tracker" target="_blank"><circle cx="233.8" cy="331.8" r="34.9" fill="#6E4E3D" fill-opacity="0.28" stroke="#6E4E3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="6.75s" begin="1.9600000000000002s" repeatCount="indefinite"/></circle>
-<circle cx="233.8" cy="331.8" r="25.9" fill="#6E4E3D" fill-opacity="0.92"/>
+<circle cx="233.8" cy="331.8" r="25.9" fill="url(#node-6e4e3d)" fill-opacity="0.92"/>
 <text x="233.8" y="321.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">security-incident</text>
 <text x="233.8" y="331.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#F8FAFC">asset-tracker</text>
 <text x="233.8" y="372.7" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Java</text></a></g>
-<circle cx="60" cy="555" r="4" fill="#547A6E" fill-opacity="0.92"/><text x="70" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">SOC</text>
-<circle cx="132" cy="555" r="4" fill="#0F2C3D" fill-opacity="0.92"/><text x="142" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Python</text>
-<circle cx="204" cy="555" r="4" fill="#C4936A" fill-opacity="0.92"/><text x="214" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Web</text>
-<circle cx="276" cy="555" r="4" fill="#2D4F56" fill-opacity="0.92"/><text x="286" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Network</text>
-<circle cx="348" cy="555" r="4" fill="#6E4E3D" fill-opacity="0.92"/><text x="358" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Java</text>
+<circle cx="60" cy="555" r="4" fill="url(#node-547a6e)" fill-opacity="0.92"/><text x="70" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">SOC</text>
+<circle cx="132" cy="555" r="4" fill="url(#node-0f2c3d)" fill-opacity="0.92"/><text x="142" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Python</text>
+<circle cx="204" cy="555" r="4" fill="url(#node-c4936a)" fill-opacity="0.92"/><text x="214" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Web</text>
+<circle cx="276" cy="555" r="4" fill="url(#node-2d4f56)" fill-opacity="0.92"/><text x="286" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Network</text>
+<circle cx="348" cy="555" r="4" fill="url(#node-6e4e3d)" fill-opacity="0.92"/><text x="358" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Java</text>
 <text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">1198 commits in 2026 · latest 21 Nov 2026</text>
 </g></svg>
