@@ -93,5 +93,5 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 </picture>
 
 <div align="center">
-  <img src="./assets/cat-sleeping.svg" alt="Sleeping black cat" width="420">
+  <img src="./assets/cat-sleeping.svg" alt="Sleeping black cat with Zzz marks" width="420">
 </div>
