@@ -85,3 +85,9 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 <sub> Mangaluru, India ·  Blue Team ·  78 days highest TryHackMe streak</sub>
 
 </div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./project-map-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./project-map-light.svg">
+  <img alt="Andyydz project map — everything I build and how it connects" src="./project-map-dark.svg" width="100%">
+</picture>
