@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-dark.svg?v=3">
   <source media="(prefers-color-scheme: light)" srcset="./profile-light.svg?v=3">
-  <img alt="Andrew D Souza (Andyy) — SOC Analyst (L1) → Cloud Security" src="./profile-dark.svg?v=3" width="100%">
+  <img alt="Andrew D Souza (Andyy) — Blue Team, Detection & Response" src="./profile-dark.svg?v=3" width="100%">
 </picture>
 
 <br/>
@@ -20,13 +20,13 @@
 
 ##  About
 
-Cybersecurity student focused on **Security Operations (SOC)**, threat detection, incident response and security automation. I build hands-on experience through SOC labs, Python-based security tools, network security projects and investigation write-ups.
+Cybersecurity student building **blue-team expertise** across detection and response, security automation, networking and cloud foundations. I build hands-on experience through SOC labs, Python-based security tools, network security projects and investigation write-ups.
 
-Currently strengthening my skills in SIEM operations, log analysis and endpoint security, with a longer-term focus on **Cloud Security**.
+Currently strengthening SIEM operations, log analysis and endpoint security, while developing networking and AWS cloud fundamentals.
 
-**Open to SOC Analyst (L1) roles in Hyderabad and Bangalore** (also open to relocation within India).
+**Open to SOC Analyst (L1) and broader blue-team/cybersecurity roles in Hyderabad and Bangalore** (also open to relocation within India).
 
- [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) ·  [andyydz57@gmail.com](mailto:andyydz57@gmail.com) · [LinkedIn](https://www.linkedin.com/in/andrew-vinston-d-souza-41699330a/)
+ [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) · [andyydz57@gmail.com](mailto:andyydz57@gmail.com)
 
 ##  Toolkit
 
@@ -57,8 +57,8 @@ Currently strengthening my skills in SIEM operations, log analysis and endpoint 
 
 | Project | What it is |
 | --- | --- |
-| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Home SOC lab for practicing the detect, investigate and respond cycle. Wazuh 4.14.8 manager, a monitored Ubuntu endpoint with real-time file integrity monitoring, and Kali Linux for controlled testing. Validated detection of file creation, modification and deletion (Rules 100003, 100002, 100004, each Level 8) and documented the investigation. **Skills:** SIEM alerts, FIM, investigation write-ups. CASE-001 is still open; regression testing and incident response are planned. |
-| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python tool that turns exported Wazuh JSON alerts into clean, investigation-ready records. Normalizes timestamps to UTC, optionally verifies SHA-256 integrity, enriches with local rule/severity data, runs data-quality checks and looks up MITRE ATT&CK mappings. CLI with pytest coverage. **Skills:** alert triage automation, Python, testing. In development. |
+| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Home SOC lab for practicing the detect, investigate and respond cycle. Wazuh 4.14.8 manager, a monitored Ubuntu endpoint with real-time file integrity monitoring, and Kali Linux for controlled testing. Validated detection of file creation, modification and deletion (Rules 100003, 100002, 100004, each Level 8) and documented the investigation. **Skills:** SIEM alerts, FIM, investigation write-ups. |
+| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python tool that turns exported Wazuh JSON alerts into clean, investigation-ready records. Normalizes timestamps to UTC, optionally verifies SHA-256 integrity, enriches with local rule/severity data, runs data-quality checks and looks up MITRE ATT&CK mappings. CLI with pytest coverage. **Skills:** alert triage automation, Python, testing. |
 | [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java console app (JDBC + MariaDB) for tracking IT assets and security incidents, modeled on SOC asset/incident workflows. **Skills:** Java, SQL databases, incident record keeping. |
 | [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe write-ups on Linux, Windows, SOC and security fundamentals. **Skills:** hands-on practice and documenting findings clearly. |
 | [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure bank network built in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. **Skills:** network design and access control. |
