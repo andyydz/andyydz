@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import math
+import random
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -195,45 +196,102 @@ def wrap_label(name):
     return [name[:18], name[18:]]
 
 
-def orbit_positions(count):
-    if count <= 5:
-        radius_x, radius_y = 290, 158
-    elif count <= 7:
-        radius_x, radius_y = 330, 178
-    else:
-        radius_x, radius_y = 365, 188
+def force_layout(repos):
+    """Seeded spring layout: hub attraction, domain edges, and strong pairwise repulsion."""
+    count = len(repos)
+    if count == 0:
+        return []
 
     center_x, center_y = 590, 314
+    rng = random.Random(20261121 + count)
     positions = []
-    for index in range(count):
-        angle = -math.pi / 2 + (2 * math.pi * index / count)
-        x = center_x + radius_x * math.cos(angle)
-        y = center_y + radius_y * math.sin(angle)
-        positions.append((round(x, 1), round(y, 1)))
 
-    # Pairwise separation pass: preserve radial intent while guaranteeing node breathing room.
-    for _ in range(6):
+    # Seed asymmetrically: broad radial arcs with per-node angle and radius variance.
+    for index, repo in enumerate(repos):
+        angle = rng.uniform(-math.pi * 0.95, math.pi * 0.95)
+        radius = rng.uniform(220, 390)
+        x = center_x + math.cos(angle) * radius
+        y = center_y + math.sin(angle) * radius * rng.uniform(0.52, 0.72)
+        positions.append([x, y])
+
+    edges = []
+    for i, repo in enumerate(repos):
+        edges.append((i, -1))
+        for j in range(i + 1, count):
+            if category_for(repo) == category_for(repos[j]):
+                edges.append((i, j))
+
+    # Spring/repulsion relaxation in deterministic 900-step passes.
+    for _ in range(900):
+        forces = [[0.0, 0.0] for _ in range(count)]
+
+        for i, (x, y) in enumerate(positions):
+            dx = center_x - x
+            dy = center_y - y
+            distance = max(math.sqrt(dx * dx + dy * dy), 1)
+            desired = rng.uniform(235, 305)
+            spring = (distance - desired) * 0.00024
+            forces[i][0] += dx / distance * spring
+            forces[i][1] += dy / distance * spring
+
+        for i in range(count):
+            for j in range(i + 1, count):
+                dx = positions[j][0] - positions[i][0]
+                dy = positions[j][1] - positions[i][1]
+                distance = max(math.sqrt(dx * dx + dy * dy), 25)
+                repulsion = 3900 / (distance * distance)
+                ux, uy = dx / distance, dy / distance
+                forces[i][0] -= ux * repulsion
+                forces[i][1] -= uy * repulsion
+                forces[j][0] += ux * repulsion
+                forces[j][1] += uy * repulsion
+
+        for i, j in edges:
+            if j >= 0:
+                dx = positions[j][0] - positions[i][0]
+                dy = positions[j][1] - positions[i][1]
+                distance = max(math.sqrt(dx * dx + dy * dy), 1)
+                desired = 175
+                attraction = (distance - desired) * 0.0009
+                ux, uy = dx / distance, dy / distance
+                forces[i][0] += ux * attraction
+                forces[i][1] += uy * attraction
+                forces[j][0] -= ux * attraction
+                forces[j][1] -= uy * attraction
+
+        for i, (x, y) in enumerate(positions):
+            x += forces[i][0]
+            y += forces[i][1]
+            x = max(175, min(1005, x))
+            y = max(150, min(500, y))
+            positions[i] = [x, y]
+
+    # Final collision pass uses activity-sized radii and padded label boxes.
+    for _ in range(12):
         for i in range(count):
             for j in range(i + 1, count):
                 xi, yi = positions[i]
                 xj, yj = positions[j]
                 dx, dy = xj - xi, yj - yi
-                distance = math.sqrt(dx * dx + dy * dy)
-                minimum = 118
+                distance = max(math.sqrt(dx * dx + dy * dy), 1)
+                ri = min(48, max(38, 38 + min(repos[i]["recent_commits"], 20) * 0.35 + repos[i]["stars"] * 0.8))
+                rj = min(48, max(38, 38 + min(repos[j]["recent_commits"], 20) * 0.35 + repos[j]["stars"] * 0.8))
+                minimum = ri + rj + 58
                 if distance < minimum:
-                    if distance == 0:
-                        dx, dy, distance = 1, 0, 1
-                    push = (minimum - distance) / 2
                     ux, uy = dx / distance, dy / distance
-                    positions[i] = (xi - ux * push, yi - uy * push)
-                    positions[j] = (xj + ux * push, yj + uy * push)
+                    push = (minimum - distance) / 2
+                    positions[i][0] -= ux * push
+                    positions[i][1] -= uy * push
+                    positions[j][0] += ux * push
+                    positions[j][1] += uy * push
 
-    # Keep every center and label within the 1180x610 graph frame.
-    for i, (x, y) in enumerate(positions):
-        x = max(180, min(1000, x))
-        y = max(155, min(500, y))
-        positions[i] = (round(x, 1), round(y, 1))
-    return positions
+        for i, (x, y) in enumerate(positions):
+            positions[i] = [
+                max(175, min(1005, x)),
+                max(150, min(500, y)),
+            ]
+
+    return [(round(x, 1), round(y, 1)) for x, y in positions]
 
 
 def generate_svg(theme, repos):
@@ -247,7 +305,7 @@ def generate_svg(theme, repos):
     accent = "#A6B7A1" if dark else "#0F3F3F"
     hub_x, hub_y = 590, 314
 
-    positions = orbit_positions(len(repos))
+    positions = force_layout(repos)
     category_counts = {}
     for repo in repos:
         category = category_for(repo)
@@ -263,8 +321,33 @@ def generate_svg(theme, repos):
     lines = []
     for index, repo in enumerate(repos):
         lines.append(("andyydz", repo["name"], positions[index]))
-    for index in range(len(repos)):
-        lines.append((repos[index]["name"], repos[(index + 1) % len(repos)]["name"], None))
+
+    # Organic cross-links: link repositories that share a domain/category or language.
+    category_added = set()
+    for i in range(len(repos)):
+        for j in range(i + 1, len(repos)):
+            category_i = category_for(repos[i])
+            category_j = category_for(repos[j])
+            if category_i == category_j and (category_i, j) not in category_added:
+                lines.append((repos[i]["name"], repos[j]["name"], None))
+                category_added.add((category_i, j))
+
+    # Add a sparse second-link network for nearest-neighbor visual structure.
+    for i in range(len(repos)):
+        nearest = sorted(
+            (j for j in range(len(repos)) if j != i),
+            key=lambda j: math.hypot(
+                positions[i][0] - positions[j][0],
+                positions[i][1] - positions[j][1],
+            ),
+        )[:1]
+        for j in nearest:
+            pair = tuple(sorted((repos[i]["name"], repos[j]["name"])))
+            if not any(
+                tuple(sorted((a, b))) == pair
+                for a, b, _ in lines
+            ):
+                lines.append((repos[i]["name"], repos[j]["name"], None))
 
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" fill="none">',
@@ -308,11 +391,19 @@ def generate_svg(theme, repos):
         "</circle>"
     )
     parts.append(
+        f'<g><animateTransform attributeName="transform" type="translate"'
+        f' values="0 0; 2 1.5; 0 3; -2 -1; 0 0"'
+        f' keyTimes="0;0.25;0.5;0.75;1" calcMode="spline"'
+        f' keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"'
+        f' dur="12s" repeatCount="indefinite"/>'
+    )
+    parts.append(
         f'<circle cx="{hub_x}" cy="{hub_y}" r="36" fill="{surface}" fill-opacity="0.92" stroke="{accent}" stroke-width="1.2"/>'
     )
     parts.append(
         f'<text x="{hub_x}" y="{hub_y - 1}" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="{ink}">andyydz</text>'
         f'<text x="{hub_x}" y="{hub_y + 17}" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="{muted}">CENTRAL HUB</text>'
+        "</g>"
     )
 
     for index, repo in enumerate(repos):
@@ -322,11 +413,18 @@ def generate_svg(theme, repos):
         fill = palette_for(category, index)
         label_color = text_for(fill)
         radius = min(48, max(38, 38 + min(repo["recent_commits"], 20) * 0.35 + repo["stars"] * 0.8))
-        duration = 6 + (index % 5)
+        durations = [7, 9, 11, 13, 15]
+        duration = durations[index % len(durations)]
+        phase = (index * 1.37) % duration
+        dx = 5 + (index % 3)
+        dy = 5 + ((index * 2) % 5)
 
         parts.append(
             f'<g><animateTransform attributeName="transform" type="translate"'
-            f' values="0 0; 3 2; 0 -3; -2 1; 0 0" dur="{duration}s" begin="-{index * 0.65}s" repeatCount="indefinite"/>'
+            f' values="0 0; {dx} {dy // 2}; {dy} -{dx // 2}; -{dx // 2} -{dy}; -{dx} {dy // 2}; 0 0"'
+            f' keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline"'
+            f' keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"'
+            f' dur="{duration}s" begin="-{phase:.2f}s" repeatCount="indefinite"/>'
         )
         parts.append(
             f'<a href="{escape(repo["url"], {chr(34): "&quot;"})}" target="_blank">'
