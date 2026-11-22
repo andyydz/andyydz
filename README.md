@@ -68,12 +68,12 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 
 | Project | What it is |
 | --- | --- |
-| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Home SOC lab for practicing the detect, investigate and respond cycle. Wazuh 4.14.8 manager, a monitored Ubuntu endpoint with real-time file integrity monitoring, and Kali Linux for controlled testing. Validated detection of file creation, modification and deletion (Rules 100003, 100002, 100004, each Level 8) and documented the investigation. **Skills:** SIEM alerts, FIM, investigation write-ups. |
-| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python tool that turns exported Wazuh JSON alerts into clean, investigation-ready records. Normalizes timestamps to UTC, optionally verifies SHA-256 integrity, enriches with local rule/severity data, runs data-quality checks and looks up MITRE ATT&CK mappings. CLI with pytest coverage. **Skills:** alert triage automation, Python, testing. |
-| [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java console app (JDBC + MariaDB) for tracking IT assets and security incidents, modeled on SOC asset/incident workflows. **Skills:** Java, SQL databases, incident record keeping. |
-| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | TryHackMe write-ups on Linux, Windows, SOC and security fundamentals. **Skills:** hands-on practice and documenting findings clearly. |
-| [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Secure bank network built in Cisco Packet Tracer: VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL-based security. **Skills:** network design and access control. |
-| [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | Personal cybersecurity portfolio (TypeScript) showcasing security projects, SOC investigations and network labs. Live site: [andyy-s-site.vercel.app](https://andyy-s-site.vercel.app) |
+| [**SENTINEL — SOC Lab**](https://github.com/andyydz/sentinel-soc-lab) | Wazuh 4.14.8 lab with Ubuntu 24.04 endpoints, Kali Linux and real-time `/home/` FIM. <br>Custom Rules `100002`–`100004` and replayed Windows Sysmon `.evtx` telemetry. <br>Four documented investigations (`CASE-001`–`CASE-004`) covering SSH brute-force triage and Sysmon replay. **Skills:** SIEM, FIM, detection engineering, incident investigation. |
+| [**Python SOC Automation Engine**](https://github.com/andyydz/python-soc-automation) | Python CLI tested with `pytest` for exported Wazuh JSON alerts. <br>Parses and validates alerts, standardizes timestamps to UTC, checks data quality and optionally verifies SHA-256 integrity. <br>Optional enrichment uses local rule/severity metadata and MITRE ATT&CK mappings. **Skills:** Python, JSON parsing, pytest, alert automation. |
+| [**security-incident-asset-tracker**](https://github.com/andyydz/security-incident-asset-tracker) | Java console application (JDBC + MariaDB) for tracking IT assets and security incidents. <br>Uses a SOC-oriented data model for incident records and asset information. <br>**Skills:** Java, SQL databases, incident record keeping. |
+| [**Cybersecurity-Writeups**](https://github.com/andyydz/Cybersecurity-Writeups) | Technical TryHackMe write-ups covering Linux, Windows and SOC fundamentals. <br>Documents lab steps, findings and investigation reasoning. <br>**Skills:** hands-on analysis, technical documentation. |
+| [**bank-secure-network**](https://github.com/andyydz/bank-secure-network) | Cisco Packet Tracer network design for a secure banking environment. <br>Includes VLAN segmentation, router-on-a-stick, DHCP, DNS, web services and ACL enforcement. <br>**Skills:** network design, segmentation, access control. |
+| [**andyy-s-site**](https://github.com/andyydz/andyy-s-site) | TypeScript portfolio website for cybersecurity projects, SOC investigations and network labs. <br>Live site: [andyy-s-site.vercel.app](https://andyy-s-site.vercel.app) |
 
 <br/>
 
@@ -102,5 +102,5 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 </picture>
 
 <div align="center">
-  <img src="./assets/cat-sleeping.gif" alt="Sleeping black cat with Zzz marks" width="420">
+  <img src="./assets/cat-sleeping.gif" alt="Sleeping black cat with Zzz marks" width="294">
 </div>
