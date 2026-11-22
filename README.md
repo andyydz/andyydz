@@ -59,14 +59,16 @@ I build Python tools for alert normalization and triage, and design segmented ne
 ![GitHub](https://img.shields.io/badge/GitHub-0F2027?style=flat-square&logo=github&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-28623A?style=flat-square&logo=mariadb&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4F7A5A?style=flat-square&logoColor=white)
-`JSON` (Wazuh alert parsing)
+![JSON](https://img.shields.io/badge/JSON-28623A?style=flat-square&logoColor=white)
 
 **Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F2027?style=flat-square&logo=linux&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-28623A?style=flat-square&logo=windows&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-4F7A5A?style=flat-square&logo=virtualbox&logoColor=white)
 
 **Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-0F3F3F?style=flat-square&logo=cisco&logoColor=white)
-`ping` · `traceroute` · `nslookup`
+![ping](https://img.shields.io/badge/ping-28623A?style=flat-square&logoColor=white)
+![traceroute](https://img.shields.io/badge/traceroute-2F6F4E?style=flat-square&logoColor=white)
+![nslookup](https://img.shields.io/badge/nslookup-3D7A5A?style=flat-square&logoColor=white)
 ![VLANs](https://img.shields.io/badge/VLANs-28623A?style=flat-square&logoColor=white)
 ![ACLs](https://img.shields.io/badge/ACLs-2F6F4E?style=flat-square&logoColor=white)
 ![DHCP](https://img.shields.io/badge/DHCP-3D7A5A?style=flat-square&logoColor=white)
