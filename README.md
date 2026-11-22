@@ -22,11 +22,11 @@
 
 ##  About
 
-Cybersecurity student building **blue-team expertise** across detection and response, security automation, networking and cloud foundations. I build hands-on experience through SOC labs, Python-based security tools, network security projects and investigation write-ups.
+Hands-on cybersecurity experience across **Wazuh SIEM**, detection engineering and incident investigation, supported by controlled SOC labs and documented case work.
 
-Currently strengthening SIEM operations, log analysis and endpoint security, while developing networking and AWS cloud fundamentals.
+I build Python tools for alert normalization and triage, and design segmented networks with VLANs, ACLs and routing controls.
 
-**Open to SOC Analyst (L1) and broader blue-team/cybersecurity roles in Hyderabad and Bangalore** (also open to relocation within India).
+**Open to SOC Analyst (L1) / Blue-Team roles in Hyderabad, Bengaluru, or Remote.**
 
  [Resume](./Andrew_Vinston_D_Souza_Resume.pdf) · [andyydz57@gmail.com](mailto:andyydz57@gmail.com)
 
@@ -46,7 +46,10 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 
 **Also familiar with:** ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-0F3F3F?style=flat-square&logo=elastic&logoColor=white)
 
-**Currently learning:** ![AWS](https://img.shields.io/badge/AWS-355F45?style=flat-square&logo=amazonaws&logoColor=white) · VPC · S3 · EC2
+**Currently learning:** ![AWS](https://img.shields.io/badge/AWS-355F45?style=flat-square&logo=amazonaws&logoColor=white)
+![VPC](https://img.shields.io/badge/VPC-28623A?style=flat-square&logoColor=white)
+![S3](https://img.shields.io/badge/S3-2F6F4E?style=flat-square&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-3D7A5A?style=flat-square&logoColor=white)
 
 **Programming:** ![Python](https://img.shields.io/badge/Python-28623A?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-0F3F3F?style=flat-square&logo=openjdk&logoColor=white)
@@ -56,13 +59,18 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 ![GitHub](https://img.shields.io/badge/GitHub-0F2027?style=flat-square&logo=github&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-28623A?style=flat-square&logo=mariadb&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4F7A5A?style=flat-square&logoColor=white)
-· JSON (Wazuh alert parsing)
+`JSON` (Wazuh alert parsing)
 
 **Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F2027?style=flat-square&logo=linux&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-28623A?style=flat-square&logo=windows&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-4F7A5A?style=flat-square&logo=virtualbox&logoColor=white)
 
-**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-0F3F3F?style=flat-square&logo=cisco&logoColor=white) · ping · traceroute · nslookup · VLANs · ACLs · DHCP · DNS
+**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-0F3F3F?style=flat-square&logo=cisco&logoColor=white)
+`ping` · `traceroute` · `nslookup`
+![VLANs](https://img.shields.io/badge/VLANs-28623A?style=flat-square&logoColor=white)
+![ACLs](https://img.shields.io/badge/ACLs-2F6F4E?style=flat-square&logoColor=white)
+![DHCP](https://img.shields.io/badge/DHCP-3D7A5A?style=flat-square&logoColor=white)
+![DNS](https://img.shields.io/badge/DNS-355F45?style=flat-square&logoColor=white)
 
 ##  Featured projects
 
