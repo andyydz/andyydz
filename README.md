@@ -32,28 +32,37 @@ Currently strengthening SIEM operations, log analysis and endpoint security, whi
 
 ##  Toolkit
 
-**Security:** ![Wazuh](https://img.shields.io/badge/Wazuh-3EA6E2?style=flat-square)
-![SIEM](https://img.shields.io/badge/SIEM-7C3AED?style=flat-square)
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![Snort](https://img.shields.io/badge/Snort-EE3124?style=flat-square)
-![Nmap](https://img.shields.io/badge/Nmap-0E83C8?style=flat-square)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
-![CyberChef](https://img.shields.io/badge/CyberChef-10B981?style=flat-square)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B7312C?style=flat-square)
+**Security:** ![Wazuh](https://img.shields.io/badge/Wazuh-28623A?style=flat-square&logoColor=white)
+![SIEM](https://img.shields.io/badge/SIEM-0F2027?style=flat-square&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-0F3F3F?style=flat-square&logo=splunk&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-355F45?style=flat-square&logo=wireshark&logoColor=white)
+![Snort](https://img.shields.io/badge/Snort-B6D298?style=flat-square&logoColor=0F2027)
+![Nmap](https://img.shields.io/badge/Nmap-DCE2C8?style=flat-square&logoColor=0F2027)
+![Metasploit](https://img.shields.io/badge/Metasploit-28623A?style=flat-square&logoColor=white)
+![CyberChef](https://img.shields.io/badge/CyberChef-4F7A5A?style=flat-square&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-0F2027?style=flat-square&logoColor=white)
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-355F45?style=flat-square&logo=microsoftazure&logoColor=white)
+![KQL](https://img.shields.io/badge/KQL-B6D298?style=flat-square&logoColor=0F2027)
 
-**Also familiar with:** ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-005571?style=flat-square&logo=elastic&logoColor=white)
+**Also familiar with:** ![ELK Stack](https://img.shields.io/badge/ELK%20Stack-0F3F3F?style=flat-square&logo=elastic&logoColor=white)
 
-**Currently learning:** ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) · VPC · S3 · EC2
+**Currently learning:** ![AWS](https://img.shields.io/badge/AWS-355F45?style=flat-square&logo=amazonaws&logoColor=white) · VPC · S3 · EC2
 
-**Programming:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) · JSON (Wazuh alert parsing)
+**Programming:** ![Python](https://img.shields.io/badge/Python-28623A?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-0F3F3F?style=flat-square&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-355F45?style=flat-square&logo=typescript&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-B6D298?style=flat-square&logo=pytest&logoColor=0F2027)
+![Git](https://img.shields.io/badge/Git-DCE2C8?style=flat-square&logo=git&logoColor=0F2027)
+![GitHub](https://img.shields.io/badge/GitHub-0F2027?style=flat-square&logo=github&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-28623A?style=flat-square&logo=mariadb&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4F7A5A?style=flat-square&logoColor=white)
+· JSON (Wazuh alert parsing)
 
-**Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F172A?style=flat-square&logo=linux&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
+**Operating systems:** ![Linux](https://img.shields.io/badge/Linux-0F2027?style=flat-square&logo=linux&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-28623A?style=flat-square&logo=windows&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-4F7A5A?style=flat-square&logo=virtualbox&logoColor=white)
 
-**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white) · ping · traceroute · nslookup · VLANs · ACLs · DHCP · DNS
+**Networking:** ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-0F3F3F?style=flat-square&logo=cisco&logoColor=white) · ping · traceroute · nslookup · VLANs · ACLs · DHCP · DNS
 
 ##  Featured projects
 
