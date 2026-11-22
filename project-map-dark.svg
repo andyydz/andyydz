@@ -75,10 +75,10 @@
 <text x="305.3" y="190" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">Writeups</text>
 <text x="305.3" y="237.4" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 3 · Multiple</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 5 3; 2 -6; -2 -3; -5 3; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="12s" begin="-1.37s" repeatCount="indefinite"/>
-<a href="https://github.com/andyydz/sentinel-soc-lab" target="_blank"><circle cx="391.7" cy="440" r="39.3" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.25s" begin="0.28s" repeatCount="indefinite"/></circle>
-<circle cx="391.7" cy="440" r="30.3" fill="url(#node-0f2c3d)" fill-opacity="0.92"/>
+<a href="https://github.com/andyydz/sentinel-soc-lab" target="_blank"><circle cx="391.7" cy="440" r="38.8" fill="#0F2C3D" fill-opacity="0.28" stroke="#0F2C3D" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.25s" begin="0.28s" repeatCount="indefinite"/></circle>
+<circle cx="391.7" cy="440" r="29.8" fill="url(#node-0f2c3d)" fill-opacity="0.92"/>
 <text x="391.7" y="439" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9.0" font-weight="700" fill="#F8FAFC">sentinel-soc-lab</text>
-<text x="391.7" y="485.3" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
+<text x="391.7" y="484.8" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">★ 1 · Python</text></a></g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0; 6 2; 3 -5; -3 -2; -6 2; 0 0" keyTimes="0;0.2;0.4;0.6;0.8;1" calcMode="spline" keySplines="0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95;0.45 0.05 0.55 0.95" dur="14s" begin="-2.74s" repeatCount="indefinite"/>
 <a href="https://github.com/andyydz/andyy-s-site" target="_blank"><circle cx="523.9" cy="440" r="34.5" fill="#C4936A" fill-opacity="0.28" stroke="#C4936A" stroke-width="2" stroke-opacity="0.68"><animate attributeName="stroke-opacity" values="0.68;0.92;0.68" dur="5.5s" begin="0.56s" repeatCount="indefinite"/></circle>
 <circle cx="523.9" cy="440" r="25.5" fill="url(#node-c4936a)" fill-opacity="0.92"/>
@@ -118,5 +118,5 @@
 <circle cx="204" cy="555" r="4" fill="url(#node-c4936a)" fill-opacity="0.92"/><text x="214" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Web</text>
 <circle cx="276" cy="555" r="4" fill="url(#node-2d4f56)" fill-opacity="0.92"/><text x="286" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Network</text>
 <circle cx="348" cy="555" r="4" fill="url(#node-6e4e3d)" fill-opacity="0.92"/><text x="358" y="559" font-family="Menlo, Consolas, monospace" font-size="8.5" fill="#F8FAFC">Java</text>
-<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">1198 commits in 2026 · latest 21 Nov 2026</text>
+<text x="1132" y="558" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="9" fill="#A8C6B5">1210 commits in 2026 · latest 22 Nov 2026</text>
 </g></svg>
