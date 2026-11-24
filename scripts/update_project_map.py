@@ -22,7 +22,11 @@ PALETTE = [
     "#6E4E3D",
 ]
 def github_get(path):
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    token = (
+        os.environ.get("GH_TOKEN")
+        or os.environ.get("METRICS_TOKEN")
+        or os.environ.get("GITHUB_TOKEN")
+    )
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
@@ -37,6 +41,74 @@ def github_get(path):
             return json.load(response)
     except (HTTPError, URLError, TimeoutError):
         return None
+
+
+def github_graphql(query, variables):
+    token = (
+        os.environ.get("GH_TOKEN")
+        or os.environ.get("METRICS_TOKEN")
+        or os.environ.get("GITHUB_TOKEN")
+    )
+    if not token:
+        return None
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+        "User-Agent": "andyydz-project-map",
+    }
+    request = Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode("utf-8"),
+        headers=headers,
+    )
+    try:
+        with urlopen(request, timeout=30) as response:
+            payload = json.load(response)
+            if payload.get("errors"):
+                return None
+            return payload.get("data")
+    except (HTTPError, URLError, TimeoutError):
+        return None
+
+
+def get_profile_contribution_total(year):
+    now = datetime.now(timezone.utc)
+    from_value = datetime(year, 1, 1, tzinfo=timezone.utc)
+    end_year = now if year == now.year else datetime(year, 12, 31, tzinfo=timezone.utc)
+    to_value = end_year.replace(hour=23, minute=59, second=59, microsecond=0)
+
+    query = """
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+          }
+          totalCommitContributions
+          restrictedContributionsCount
+        }
+      }
+    }
+    """
+    data = github_graphql(
+        query,
+        {
+            "login": OWNER,
+            "from": from_value.isoformat().replace("+00:00", "Z"),
+            "to": to_value.isoformat().replace("+00:00", "Z"),
+        },
+    )
+    if data:
+        collection = (data.get("user") or {}).get("contributionsCollection")
+        if collection:
+            total = collection.get("contributionCalendar", {}).get("totalContributions")
+            if isinstance(total, int):
+                return total
+
+    # Clean fallback for local runs or repositories without a configured PAT.
+    return sum(repo["yearly_commits"] for repo in discover_repositories())
 
 
 def parse_timestamp(value):
@@ -324,7 +396,7 @@ def force_layout(repos):
     return [(round(x, 1), round(y, 1)) for x, y in positions]
 
 
-def generate_svg(theme, repos):
+def generate_svg(theme, repos, profile_contribution_total=None):
     dark = theme == "dark"
     background = "#0F2027" if dark else "#DCE2C8"
     surface = "#28623A" if dark else "#B6D298"
@@ -500,7 +572,11 @@ def generate_svg(theme, repos):
         lx += 72
 
     current_year = datetime.now(timezone.utc).year
-    total_commits = sum(repo["yearly_commits"] for repo in repos)
+    total_commits = (
+        profile_contribution_total
+        if profile_contribution_total is not None
+        else sum(repo["yearly_commits"] for repo in repos)
+    )
     latest_values = [repo["latest_commit"] for repo in repos if repo["latest_commit"]]
     latest_commit = max(latest_values, key=parse_timestamp) if latest_values else None
     parts.append(
@@ -514,8 +590,11 @@ def main():
     repos = discover_repositories()
     if not repos:
         repos = []
+    profile_contribution_total = get_profile_contribution_total(
+        datetime.now(timezone.utc).year
+    )
     for theme in ("dark", "light"):
-        svg = generate_svg(theme, repos)
+        svg = generate_svg(theme, repos, profile_contribution_total)
         Path(f"project-map-{theme}.svg").write_text(svg)
 
 

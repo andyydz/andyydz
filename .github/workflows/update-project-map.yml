@@ -5,11 +5,15 @@ on:
     branches:
       - main
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "7 */2 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-project-map
+  cancel-in-progress: false
 
 jobs:
   update-project-map:
@@ -27,6 +31,8 @@ jobs:
       - name: Generate project map SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: python scripts/update_project_map.py
 
       - name: Commit generated SVGs
